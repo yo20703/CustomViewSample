@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/card_number"
+        android:textColor="#5E5E5E"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_card_number1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_card"/>
+
+    <EditText
+        android:id="@+id/et_card_number2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="4"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/et_card_number1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_card"/>
+
+    <EditText
+        android:id="@+id/et_card_number3"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="4"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/et_card_number2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_card"/>
+
+    <EditText
+        android:id="@+id/et_card_number4"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="4"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/et_card_number3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_card"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
