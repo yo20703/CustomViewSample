@@ -58,6 +58,7 @@ public class CardInputView extends ConstraintLayout {
         return text;
     }
 
+    //callback
     public void setOnTextChangeListener(TextChangeListener textChangeListener){
         this.textChangeListener = textChangeListener;
     }
